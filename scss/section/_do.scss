@@ -1,0 +1,42 @@
+  .section-no-top-padding {
+    padding-top: 0px;
+}
+
+.section--desktop {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: unset;
+  }
+}
+
+.do {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 94px;
+}
+
+.do__item {
+  position: relative;
+}
+
+.do__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.do__label {
+    font-weight: 700;
+    font-size: $fontSize;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $lightColor;
+    position: absolute;
+    background: rgba(47, 48, 58, 0.8);
+    padding: 27px 132px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: nowrap;
+}
