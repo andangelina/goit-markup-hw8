@@ -1,0 +1,153 @@
+.subscription{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  @media screen and (min-width: 768px) {
+    margin-top: 50px;
+  }
+ @media screen and (min-width: 1200px) {
+  margin-top: 0px;
+  align-items: unset;
+ }
+
+}
+
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+     
+  }
+}
+
+.subscription__input {
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  height: 50px;
+  width: calc(100vw - 30px);
+  font-size: $secondaryFontSize;
+  background-color: $darkBackgroundColor;
+  color: $lightColor;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $lightColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    width: 358px;
+  
+}
+}
+
+#footer-placeholder::placeholder {
+  font-weight: 400;
+  font-size: $secondaryFontSize;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscription__icon {
+  padding-left: 10px;
+  fill: currentColor;
+}
+
+.subscription__header{
+  @extend %footer-header;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+// .subscription-form {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+
+//   @media screen and (min-width:1200px) {
+//     flex-direction: row;
+//   }
+// }
+
+// .subscription {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+// .subscription__header{
+//  font-weight: 700;
+//  font-size: $fontSize;
+//  line-height: 16px;
+//  letter-spacing: 0.03em;
+//  text-transform: uppercase;
+//  color: $lightColor;
+//  margin-top: 60px;
+
+//  @media screen and (min-width: 1200px) {
+//   margin:15px 240px 0 0;
+//  }
+// }
+
+// .subscription__input {
+//     box-sizing: border-box;
+//     padding-left: 16px;
+//     height: 50px;
+//     max-width: 450px;
+//     margin-top: 20px;
+//     font-size: $secondaryFontSize;
+//     background-color: $darkBackgroundColor;
+//     color: $lightColor;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+//     transition-property: border-color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover,
+//   &:focus {
+//     border-color: $lightColor;
+//   }
+
+//   @media screen and (min-width:1200px) {
+//     display: flex;
+//     margin-left: 93px;
+//     width: 358px;
+// }
+// }
+
+// #footer-placeholder::placeholder {
+//     font-weight: 400;
+//     font-size: $secondaryFontSize;
+//     line-height: 20px;
+//     letter-spacing: 0.03em;
+//     color: rgba(255, 255, 255, 0.6);
+// }
+
+// .subscription__icon {
+//     padding-left: 10px;
+//     fill: currentColor;
+// }
