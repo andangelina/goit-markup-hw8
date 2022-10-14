@@ -1,0 +1,57 @@
+ :focus {
+    outline: none;
+} 
+
+/* hero hover button color   #188CE8  */
+
+
+/* default styles*/
+ 
+body {
+    font-family: Roboto, sans-serif;
+    font-style: $fontStyle;
+    color: $primaryColor;
+    font-size: $fontSize;
+    background-color: $primaryBackgroundColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+} 
+
+ html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+} 
+
+img {
+    display: block;
+    max-width: 100%;
+    height:auto;
+} 
+
+address {
+    font-style: $fontStyle;
+}
+
+.link {
+    text-decoration: $noTextDeco;
+    color: inherit;
+}
+
+ .list {
+    list-style: $noListStyle;
+    padding: 0;
+    margin: 0;
+}
