@@ -73,8 +73,9 @@
 
 .subscription__header{
   @extend %footer-header;
-    display: flex;
+   
     margin-bottom: 20px;
+    text-align: center;
 }
 
 // .subscription-form {
